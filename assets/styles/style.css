@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: rgb(49, 38, 0);;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: rgba(3, 223, 252, 0.7);
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    transition: all 0.5S;
+}
+
+nav a:hover {
+    background-color: rgba(3, 223, 252, 0.2);
+}
+
+.jumbotron {
+    background-image: url(../image/bg.jpg);
+    margin-top: -30px;
+    height: 660px;
+    background-size: cover;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    padding-top: 200px;
+    color: white;
+}
+
+.jumbotron p {
+    color: white;
+}
+
+.jumbotron hr {
+    width: 25px;
+    border: 0;
+    padding-bottom: 10px;
+    margin-top: -15px;
+    border-top: 6px solid rgb(49, 38, 0);
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+#tentang p {
+    text-align: justify;
+    line-height: 30px;
+}
+
+#tentang p::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: gold;
+}
+
+#content {
+	float: left;
+	width: 70%;
+}
+
+aside {
+	float: right;
+	width: 30%;
+	padding-left: 20px;
+}
+
+#biodata header {
+	text-align: center;
+}
+
+table tr {
+    line-height: 30px;
+}
+
+#biodata img {
+	width: 200px;
+}
+
+#biodata input {
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(109, 109, 109);
+    background-color: gold;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    background-color: rgb(3, 223, 252);
+	box-shadow: 0 4px 10px 0 rgb(109, 109, 109);
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.isi input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.isi textarea {
+    resize: none;
+}
+
+.isi .kirim, .reset {
+    cursor: pointer;
+}
+
+footer {
+	padding: 10px;
+	background-color: rgb(3, 223, 252);
+	text-align: center;
+	font-weight: bold;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 38px;
+    }
+
+    .jumbotron hr {
+        width: 30px;
+    }
+
+    .jumbotron p {
+        font-size: 15px;
+    }
+    
+    table {
+        margin: 0 auto;
+    }
+
+    .isi input, textarea {
+        width: 100%;
+    }
+}
+
+
+/* Android */
+@media screen and (max-width: 650px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav{
+        text-align: center;
+    }
+
+    .jumbotron h1 {
+        font-size: 25px;
+    }
+
+    .jumbotron hr {
+        width: 20px;
+        margin-top: -5px;
+    }
+
+    .jumbotron p {
+        font-size: 14px;
+    }
+
+    article h2 {
+        font-size: 22px;
+    }
+
+    #tentang p {
+        font-size: 14px;
+    }
+
+    #tentang p::first-letter {
+        font-size: 30px;
+    }
+
+    .isi input, textarea {
+        width: 100%;
+    }
+
+    #biodata img {
+        width: 150px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

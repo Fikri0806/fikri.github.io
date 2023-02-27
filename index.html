@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikri Haykal Nasution</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#content">Tentang Saya</a></li>
+                <li><a href="#biodata">Biodata</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron" id="home">
+            <h1>Selamat Datang Di Website Saya</h1>
+            <hr>
+            <p>Ayo Cari Tau Siapa Saya</p>
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="tentang" class="card">
+                <h2>TENTANG SAYA</h2>
+                <p>Assalamualaikum warahmatullahi wabarakatuh. Hai semuanya. Perkenalkan nama saya adalah 
+                    Fikri Haykal Nasution atau Biasa dipanggil Fikri. Saya merupakan anak kedua dari dua bersaudara. 
+                    Saya memiliki seorang abang. Saat ini saya sedang berkuliah di Politeknik Negeri Medan dan Saya 
+                    mengambil program studi Manajemen Informatika. Saya memiliki hobi bermain Bulutangkis dan berenang. 
+                    Selain itu saya juga suka mengedit foto ataupun membuat logo. Disela-sela waktu berkuliah
+                    saya tak lupa untuk terus memperdalam ilmu pemograman saya dengan cara mengikuti beberapa pelatihan 
+                    yang ada, contohnya saja sekarang ini saya sedang mengikuti program beasiswa Lintasarta
+                    Full Stack Web Developer.</p>
+            </article>
+
+
+            <article id="contact" class="card">
+                <h2>CONTACT</h2>
+                  <form onsubmit = "return cekform()">
+                    <div class="isi">
+                      <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama">
+                      <input type="text" class="form-control" id="email" placeholder="Masukkan Email">
+                    
+                      <textarea name="pesan" id="pesan" class="form-control" placeholder="Tuliskan Pesan Anda Disini"></textarea>
+                    
+                      <input type="submit" class="kirim" name="kirim" value="Kirim">
+                      <input type="reset" class="reset" name="reset" value="Reset">
+                    </div>
+                  </form>
+            </article>
+        </div>
+    
+
+        <aside>
+            <article id="biodata" class="card">
+                <header>
+                    <h2>BIODATA</h2>
+                    <figure>
+                        <img src="./assets/image/foto.jpg" id="ganti" alt="fotosaya">
+                        <br>
+                        <input type="button" value="Foto 1" onclick="foto1()">
+                        <input type="button" value="Foto 2" onclick="foto2()">
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td> : Fikri Haykal Nasution</td>
+                        </tr>
+                        <tr>
+                            <th>Jenis Kelamin</th>
+                            <td> : Laki-laki</td>
+                        </tr>
+                        <tr>
+                            <th>Tempat, Tanggal Lahir</th>
+                            <td> : Lubuk Pakam, 8 Juni 2002</td>
+                        </tr>
+                        <tr>
+                            <th>Agama</th>
+                            <td> : Islam</td>
+                        </tr>
+                        <tr>
+                            <th>No Hp</th>
+                            <td> : 085765963044</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td> : Jl.B.Labuhan Komplek Bandala Asri</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    
+
+    <footer>
+        <p>Copyright 2022 By Fikri Haykal Nasution</p>
+    </footer>
+
+    <script src="./assets/styles/script.js"></script>
+</body>
+</html>
